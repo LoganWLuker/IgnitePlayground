@@ -28,7 +28,7 @@ export const LoginScreen = observer(function LoginScreen() {
   const nextScreen = () => navigation.navigate("mainStack")
 
 
-  const [username, onUserChange] = React.useState("Alan");
+  const [username, onUserChange] = React.useState("");
   const [password, onPassChange] = React.useState("123");
   
   const checkLogin = async function(){
@@ -47,6 +47,7 @@ export const LoginScreen = observer(function LoginScreen() {
       alert('trying')
       const thing = await userStore.login(username, password)
       alert('View is done: ' + thing )
+      nextScreen()
     }
   }
 

@@ -67,11 +67,11 @@ export const createUserStoreDefaultModel = () => types.optional(UserStoreModel, 
 
 
 // because reasons
-function delay<T>(time: number, value: T, shouldThrow = false): Promise<T> {
-  return new Promise((resolve, reject) => {
-      setTimeout(() => {
-          if (shouldThrow) reject(value)
-          else resolve(value)
-      }, time)
-  })
-}
+// function delay<T>(time: number, value: T, shouldThrow = false): Promise<T> {
+//   return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//           if (shouldThrow) reject(value)
+//           else resolve(value)
+//       }, time)
+//   })
+// }
